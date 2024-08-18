@@ -8,70 +8,57 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "get",
-				"outputs": [
-					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "i",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "myMap",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "remove",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_i",
+						"name": "j",
 						"type": "uint256"
 					}
 				],
-				"name": "set",
-				"outputs": [],
+				"name": "add",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "y",
+						"type": "uint256"
+					}
+				],
+				"name": "addToX",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "x",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -88,7 +75,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"12-0-mapping.sol": "Mapping"
+			"19-pureAndViewFunc.sol": "ViewAndPure"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -102,12 +89,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"12-0-mapping.sol": {
-			"keccak256": "0x6f1cfedba8103f338b918fb54cea248af84e70b0c781ebdd676af1166742ee2b",
+		"19-pureAndViewFunc.sol": {
+			"keccak256": "0x0114b1a3967979e7bd90d81ee45a4f5ce7e39e9811ec1d397274af78e2201e7c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://522df1ceaccfee7dba77178f11e4c5b37f9f5323fbc6bd60f9c4ce4db898c862",
-				"dweb:/ipfs/Qmeysh5TVrjKpneKhw3pGyaPvonGPZkd3cjft5887xGG8u"
+				"bzz-raw://6b0f3401bc39a37c2f5fae60d367c319a028675b39232aeba0853ffdd4ce2f8a",
+				"dweb:/ipfs/QmfKFuKt8sMPkEML3RyaqW3jETmZmLUvFLv7aYyo93K8ZW"
 			]
 		}
 	},

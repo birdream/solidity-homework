@@ -6,14 +6,21 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "MAX_UINT",
+				"outputs": [
 					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "get",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "balance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -27,31 +34,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "myMap",
-				"outputs": [
-					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_amount",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "remove",
+				"name": "deposit",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -59,17 +47,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
-						"name": "_i",
+						"name": "_amount",
 						"type": "uint256"
 					}
 				],
-				"name": "set",
+				"name": "withdraw",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -88,7 +71,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"12-0-mapping.sol": "Mapping"
+			"20-1-error.sol": "Account"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -102,12 +85,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"12-0-mapping.sol": {
-			"keccak256": "0x6f1cfedba8103f338b918fb54cea248af84e70b0c781ebdd676af1166742ee2b",
+		"20-1-error.sol": {
+			"keccak256": "0x9c154464a66839c81e0ddbe0bf2f1d610d4098da73295a37397589ece249a9b3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://522df1ceaccfee7dba77178f11e4c5b37f9f5323fbc6bd60f9c4ce4db898c862",
-				"dweb:/ipfs/Qmeysh5TVrjKpneKhw3pGyaPvonGPZkd3cjft5887xGG8u"
+				"bzz-raw://d81bc6c0808da5777b04884cebc48f240cc77d5da4ee15e03b1618a8ac38eb2a",
+				"dweb:/ipfs/QmPYMs3kZWiWe9JuAkxjagrK8Sg5zyr4SdZCnZNWECKoYo"
 			]
 		}
 	},

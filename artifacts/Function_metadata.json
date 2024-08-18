@@ -27,51 +27,19 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "uint256[]",
+						"name": "_arr",
+						"type": "uint256[]"
 					}
 				],
-				"name": "arr2",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "examples",
+				"name": "arrayInput",
 				"outputs": [],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "i",
-						"type": "uint256"
-					}
-				],
-				"name": "get",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "getArr",
+				"name": "arrayOutput",
 				"outputs": [
 					{
 						"internalType": "uint256[]",
@@ -84,67 +52,104 @@
 			},
 			{
 				"inputs": [],
-				"name": "getLength",
+				"name": "assigned",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "x",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
+					},
+					{
+						"internalType": "bool",
+						"name": "b",
+						"type": "bool"
+					},
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "y",
 						"type": "uint256"
 					}
 				],
-				"name": "myFixedSizeArr",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "pop",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
+				"name": "destructuringAssignments",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "i",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "push",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "named",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "index",
+						"name": "x",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "b",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "y",
 						"type": "uint256"
 					}
 				],
-				"name": "remove",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "returnMany",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -161,7 +166,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"13-0-array.sol": "Array"
+			"18-0-function.sol": "Function"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -175,12 +180,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"13-0-array.sol": {
-			"keccak256": "0xb124dc112e46a6a8e06dc67772010a695623f7e89c62adad425e20f64ee4c2a2",
+		"18-0-function.sol": {
+			"keccak256": "0xd2e9dd915b8130fa9333e04c6de14a3efac607e73989f0f606392424b94fb922",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2520eec2bedc234b7ceb227c95bc9ea83befd42cd10492e7bc836d0775987b15",
-				"dweb:/ipfs/QmbgtqcEcXFUGsP4o9g5UJGfKTRSwjansDhhw3847zpJdL"
+				"bzz-raw://1fd32c5f909ed468c1a6133d8089891234616a206c742e312ff3438e898e9446",
+				"dweb:/ipfs/QmSaeko9NmNtWog389jBvgG3StydwCVwkY7R9qtrc1EtPK"
 			]
 		}
 	},

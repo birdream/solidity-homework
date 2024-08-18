@@ -8,70 +8,76 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "get",
-				"outputs": [
-					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "balance",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "myMap",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "remove",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
 					},
+					{
+						"internalType": "uint256",
+						"name": "withdrawAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "InsufficientBalance",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "num",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testAssert",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_withdrawAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "testCustomError",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
 					{
 						"internalType": "uint256",
 						"name": "_i",
 						"type": "uint256"
 					}
 				],
-				"name": "set",
+				"name": "testRequire",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_i",
+						"type": "uint256"
+					}
+				],
+				"name": "testRevert",
+				"outputs": [],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -88,7 +94,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"12-0-mapping.sol": "Mapping"
+			"20-0-error.sol": "Error"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -102,12 +108,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"12-0-mapping.sol": {
-			"keccak256": "0x6f1cfedba8103f338b918fb54cea248af84e70b0c781ebdd676af1166742ee2b",
+		"20-0-error.sol": {
+			"keccak256": "0x24495a496f5b743b29c0eb2cba03eda76e626c6bca4821a7b748599c56867b96",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://522df1ceaccfee7dba77178f11e4c5b37f9f5323fbc6bd60f9c4ce4db898c862",
-				"dweb:/ipfs/Qmeysh5TVrjKpneKhw3pGyaPvonGPZkd3cjft5887xGG8u"
+				"bzz-raw://23daf14c660f42cc9c47a9568f4d8c40b585fd2c2c1733961b9829bd4a41e2a6",
+				"dweb:/ipfs/Qmbhx3g6XCtfufWMPpmjVFgxKfLe1sE8g4sRim4nEN7q7L"
 			]
 		}
 	},

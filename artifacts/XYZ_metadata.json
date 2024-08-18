@@ -6,14 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "get",
+				"inputs": [],
+				"name": "callFunc",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -21,18 +15,12 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "myMap",
+				"inputs": [],
+				"name": "callFuncWithKeyValue",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -40,38 +28,51 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "remove",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_i",
+						"name": "y",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "z",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "a",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "b",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "c",
+						"type": "string"
+					}
+				],
+				"name": "someFuncWithManyInputs",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "set",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -88,7 +89,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"12-0-mapping.sol": "Mapping"
+			"18-1-function.sol": "XYZ"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -102,12 +103,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"12-0-mapping.sol": {
-			"keccak256": "0x6f1cfedba8103f338b918fb54cea248af84e70b0c781ebdd676af1166742ee2b",
-			"license": "MIT",
+		"18-1-function.sol": {
+			"keccak256": "0x4666184337882ac21b8ff69ae4248a9beb69f213a3c88a462928f87164720ac4",
 			"urls": [
-				"bzz-raw://522df1ceaccfee7dba77178f11e4c5b37f9f5323fbc6bd60f9c4ce4db898c862",
-				"dweb:/ipfs/Qmeysh5TVrjKpneKhw3pGyaPvonGPZkd3cjft5887xGG8u"
+				"bzz-raw://57b3ec5a4606a6e02ac9a7f319133d524b42a37a1db1cddae126f7e67a9b2579",
+				"dweb:/ipfs/QmRtEjXqvjGbFy2E3Vuw7FDpH1qms69wur8QkyXxru1NyM"
 			]
 		}
 	},

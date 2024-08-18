@@ -8,12 +8,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "get",
+				"name": "arr",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -27,28 +27,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "myMap",
-				"outputs": [
-					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_index",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
 					}
 				],
 				"name": "remove",
@@ -57,19 +38,8 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_i",
-						"type": "uint256"
-					}
-				],
-				"name": "set",
+				"inputs": [],
+				"name": "test",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -88,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"12-0-mapping.sol": "Mapping"
+			"13-1-array.sol": "ArrayRemoveByShifting"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -102,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"12-0-mapping.sol": {
-			"keccak256": "0x6f1cfedba8103f338b918fb54cea248af84e70b0c781ebdd676af1166742ee2b",
+		"13-1-array.sol": {
+			"keccak256": "0xa86f2bd39be3ee561f6a1f9977f50d720c1ec6442169f18304ff1a5139b60964",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://522df1ceaccfee7dba77178f11e4c5b37f9f5323fbc6bd60f9c4ce4db898c862",
-				"dweb:/ipfs/Qmeysh5TVrjKpneKhw3pGyaPvonGPZkd3cjft5887xGG8u"
+				"bzz-raw://cebf4f06a786f0c18dd7f0ce070c37b3a047dc025b437dc5f4429ff7254850b2",
+				"dweb:/ipfs/QmbmFNADYUvJ9M1j9djV1WRAsvkvjXLJWf3DyH2fBq9zT4"
 			]
 		}
 	},
