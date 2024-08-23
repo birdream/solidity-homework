@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"l1-5-homework/ETHWallet.sol": "CrowdFunding"
+			"l1-5-homework/ETHWallet.sol": "ETHW"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"l1-5-homework/ETHWallet.sol": {
-			"keccak256": "0xf821ed1ce7121876c4e0886e9e4892f58364409a0a37e63cd9b76b54732067ba",
+			"keccak256": "0xf49346a04cb8c0625ba360e11c97e47f29981f9378e3a841e7d8f2a9187cb55f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f97c631277dcfc90e7b2eb680ddc0fb83f6b5be6cc439f779b48d59aa8e13c4f",
-				"dweb:/ipfs/QmSki4TQaTAsGvGMBrDAwfQ1kMFUpg3uncvYPMurPxHZVz"
+				"bzz-raw://92b6fc5fc3ce01ee156af3e8f17d726d780c896c58379c38018db7aa4feebcdb",
+				"dweb:/ipfs/QmV1dQhuDPbq6p2UMXzpTTkVwTXncDJ7MhbXVErbsaoxn8"
 			]
 		}
 	},
