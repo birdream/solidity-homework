@@ -21,7 +21,7 @@ contract MultisigWallet {
 
         for (uint i = 0; i < _owners.length; i++) {
             address owner = _owners[i];
-            require(owner != address(0) && owner != address(this) && isOwner[owner], "DQ5003");
+            require(owner != address(0) && owner != address(this) && !isOwner[owner], "DQ5003");
             owners.push(owner);
             isOwner[owner] = true;
         }
