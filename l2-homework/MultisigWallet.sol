@@ -91,4 +91,8 @@ contract MultisigWallet {
                 v := and(mload(add(signatures, add(signaturePos, 0x41))), 0xff)
             }
     }
+
+    receive() external payable {}
+
+    fallback() external payable {}
 }
