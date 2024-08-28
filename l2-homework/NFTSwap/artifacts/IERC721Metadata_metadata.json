@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenURI",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"l2-homework/NFTSwap/IERC721Metadata.sol": "IERC721Metadata"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"l2-homework/NFTSwap/IERC721Metadata.sol": {
+			"keccak256": "0xbd4003b7d3215254fe76e8b4681bb6191825506748b6dcb036c168f66050dc69",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0a71d93aba960d1635044b41c7d14a08ebb90162ba6d4bc6cb81576fbbdc635c",
+				"dweb:/ipfs/QmSz3jamzmZVJrEteSYen3521tVKsv2Uyp8MUPTFuQ5moa"
+			]
+		}
+	},
+	"version": 1
+}

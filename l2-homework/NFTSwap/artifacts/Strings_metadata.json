@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "String operations.",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"l2-homework/NFTSwap/Strings.sol": "Strings"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"l2-homework/NFTSwap/Strings.sol": {
+			"keccak256": "0xd2fb60574f698834a9bcb4a3f7be6c6d992d8ded8b905e2b4795ea50f34424eb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://93ab7e806af90d7eae6a8e4869972cdddd02a44986e11897e82ceab28811a645",
+				"dweb:/ipfs/QmSU9VsoRddy1vm3ZKVfzzhVrGiFDpWnY3LD6SPxucxQ2u"
+			]
+		}
+	},
+	"version": 1
+}

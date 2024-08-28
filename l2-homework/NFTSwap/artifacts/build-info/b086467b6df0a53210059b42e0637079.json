@@ -1,0 +1,261 @@
+{
+	"id": "b086467b6df0a53210059b42e0637079",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.26",
+	"solcLongVersion": "0.8.26+commit.8a97fa7a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"l2-homework/NFTSwap/IERC165.sol": {
+				"content": "// SPDX-License-Identifier: MIT\n//IERC165.sol\n\npragma solidity ^0.8.0;\n\n/**\n * @dev ERC165标准接口, 详见\n * https://eips.ethereum.org/EIPS/eip-165[EIP].\n *\n * 合约可以声明支持的接口，供其他合约检查\n *\n */\ninterface IERC165 {\n    /**\n     * @dev 如果合约实现了查询的`interfaceId`，则返回true\n     * 规则详见：https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]\n     *\n     */\n    function supportsInterface(bytes4 interfaceId) external view returns (bool);\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"l2-homework/NFTSwap/IERC165.sol": {
+				"IERC165": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "bytes4",
+									"name": "interfaceId",
+									"type": "bytes4"
+								}
+							],
+							"name": "supportsInterface",
+							"outputs": [
+								{
+									"internalType": "bool",
+									"name": "",
+									"type": "bool"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"details": "ERC165标准接口, 详见 https://eips.ethereum.org/EIPS/eip-165[EIP]. 合约可以声明支持的接口，供其他合约检查",
+						"kind": "dev",
+						"methods": {
+							"supportsInterface(bytes4)": {
+								"details": "如果合约实现了查询的`interfaceId`，则返回true 规则详见：https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]"
+							}
+						},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"supportsInterface(bytes4)": "01ffc9a7"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"ERC165\\u6807\\u51c6\\u63a5\\u53e3, \\u8be6\\u89c1 https://eips.ethereum.org/EIPS/eip-165[EIP]. \\u5408\\u7ea6\\u53ef\\u4ee5\\u58f0\\u660e\\u652f\\u6301\\u7684\\u63a5\\u53e3\\uff0c\\u4f9b\\u5176\\u4ed6\\u5408\\u7ea6\\u68c0\\u67e5\",\"kind\":\"dev\",\"methods\":{\"supportsInterface(bytes4)\":{\"details\":\"\\u5982\\u679c\\u5408\\u7ea6\\u5b9e\\u73b0\\u4e86\\u67e5\\u8be2\\u7684`interfaceId`\\uff0c\\u5219\\u8fd4\\u56detrue \\u89c4\\u5219\\u8be6\\u89c1\\uff1ahttps://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"l2-homework/NFTSwap/IERC165.sol\":\"IERC165\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"l2-homework/NFTSwap/IERC165.sol\":{\"keccak256\":\"0xf7f70ba35273d15f73e6901cf13bbc7c42d41d16f021d74254342206e7291258\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f17184cc368712ea83f855d51b352fc5487a217dcb6bf9e5315e331f901eefd4\",\"dweb:/ipfs/QmRQdT1ZwzbGUA9ydKPRNibEE3kAWyBaT4i4BYWHHuG71o\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"l2-homework/NFTSwap/IERC165.sol": {
+				"ast": {
+					"absolutePath": "l2-homework/NFTSwap/IERC165.sol",
+					"exportedSymbols": {
+						"IERC165": [
+							11
+						]
+					},
+					"id": 12,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "47:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "IERC165",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"documentation": {
+								"id": 2,
+								"nodeType": "StructuredDocumentation",
+								"src": "72:157:0",
+								"text": " @dev ERC165标准接口, 详见\n https://eips.ethereum.org/EIPS/eip-165[EIP].\n 合约可以声明支持的接口，供其他合约检查"
+							},
+							"fullyImplemented": false,
+							"id": 11,
+							"linearizedBaseContracts": [
+								11
+							],
+							"name": "IERC165",
+							"nameLocation": "240:7:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"documentation": {
+										"id": 3,
+										"nodeType": "StructuredDocumentation",
+										"src": "254:194:0",
+										"text": " @dev 如果合约实现了查询的`interfaceId`，则返回true\n 规则详见：https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]"
+									},
+									"functionSelector": "01ffc9a7",
+									"id": 10,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "supportsInterface",
+									"nameLocation": "462:17:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 6,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 5,
+												"mutability": "mutable",
+												"name": "interfaceId",
+												"nameLocation": "487:11:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 10,
+												"src": "480:18:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes4",
+													"typeString": "bytes4"
+												},
+												"typeName": {
+													"id": 4,
+													"name": "bytes4",
+													"nodeType": "ElementaryTypeName",
+													"src": "480:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes4",
+														"typeString": "bytes4"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "479:20:0"
+									},
+									"returnParameters": {
+										"id": 9,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 8,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 10,
+												"src": "523:4:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bool",
+													"typeString": "bool"
+												},
+												"typeName": {
+													"id": 7,
+													"name": "bool",
+													"nodeType": "ElementaryTypeName",
+													"src": "523:4:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bool",
+														"typeString": "bool"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "522:6:0"
+									},
+									"scope": 11,
+									"src": "453:76:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 12,
+							"src": "230:301:0",
+							"usedErrors": [],
+							"usedEvents": []
+						}
+					],
+					"src": "47:484:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
