@@ -1,0 +1,139 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "asset",
+						"type": "address"
+					}
+				],
+				"name": "getPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "assets",
+						"type": "uint256[]"
+					}
+				],
+				"name": "getPrices",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "cToken",
+						"type": "uint256"
+					}
+				],
+				"name": "getUnderlyingPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"getPrice(address)": {
+					"details": "用于获取特定资产价格的函数",
+					"params": {
+						"asset": "需要获取价格的资产地址"
+					},
+					"returns": {
+						"_0": "uint 返回资产价格的尾数（按 1e8 缩放）; 如果价格未设置或合约已暂停，则返回零"
+					}
+				},
+				"getPrices(uint256[])": {
+					"params": {
+						"assets": "需要获取价格的资产数组"
+					},
+					"returns": {
+						"_0": "uint[] 返回一个包含各资产价格的数组"
+					}
+				},
+				"getUnderlyingPrice(uint256)": {
+					"params": {
+						"cToken": "需要获取价格的 cToken 标识符"
+					},
+					"returns": {
+						"_0": "uint 返回基础资产价格的尾数"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"getPrice(address)": {
+					"notice": "获取资产的价格"
+				},
+				"getPrices(uint256[])": {
+					"notice": "批量获取多个资产的价格"
+				},
+				"getUnderlyingPrice(uint256)": {
+					"notice": "获取基础资产的价格"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"L3-pledge/interface/IBscPledgeOracle.sol": "IBscPledgeOracle"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"L3-pledge/interface/IBscPledgeOracle.sol": {
+			"keccak256": "0xea0ce6f5f241bd57ba0bddfd56d22ba3a320e6429b86c515c913137d9f031ad6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://710bcbce5d6d4e8fdf7b074d6aa9f82159bfeb459d032916f9a9d48c3d487eef",
+				"dweb:/ipfs/QmavuJkZ35tJ1Xvp8L7faNFvh9oE2FP12LMd4W1gvDSpj5"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "用于安全地处理ERC20代币的转账、批准、和配额管理等操作。它通过封装ERC20标准中的一些常用函数，确保这些操作在执行时不会因为错误而导致交易失败",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"L3-pledge/library/SafeErc20.sol": "SafeERC20"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"L3-pledge/interface/IERC20.sol": {
+			"keccak256": "0x724ddb3214154ef028cc684f6872ba7598bd23a8a749e47f059e269b95b6a7d9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://176acc236fe12b3df8c6b93ed848b7668b737ad0fb60b9a8bef7f8a13dc575f3",
+				"dweb:/ipfs/QmYcKd7LkLzjtQ4RZVpRQGmUw8dPzBzMHz7m1fxqxSHRCP"
+			]
+		},
+		"L3-pledge/library/Address.sol": {
+			"keccak256": "0x8057c7aeb3e6a9ddea9989ae1f062678d8c6f7e90474138524f419eff13f24dc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fac097181acbc86c8a9e2a53523a90041751883e03169ab8f61863c158a2248f",
+				"dweb:/ipfs/QmTK8p78hTgwXM3sBYswJtdJ2fTUQ5a6AEhAcFkFw4FDs4"
+			]
+		},
+		"L3-pledge/library/SafeErc20.sol": {
+			"keccak256": "0xb76f63aa3808bc1be8dcd37d6881154d1967697eec20d5ee6643421dc2c9953d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7767e8bb635b8ea7ee70b239828f34184343b4a64d6ba60f89f15b9b21898c13",
+				"dweb:/ipfs/QmRBAYRv8HewLWYFkkxPJ77iLHhMdCrLDF7R51yv4kK7Ej"
+			]
+		},
+		"L3-pledge/library/SafeMath.sol": {
+			"keccak256": "0x0a0fbfcd81cdfb25e022914f7260be4607108efa1d82e44e988e8df07f393d38",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://17e3b52af01e75395d43f6ee10873ee25ccac157f556a5169d3d88cbde529734",
+				"dweb:/ipfs/Qmcvt2GtwLWSGn6gQ9EjE5bkkecmFdcAQRv1S5VDaXvSiL"
+			]
+		}
+	},
+	"version": 1
+}

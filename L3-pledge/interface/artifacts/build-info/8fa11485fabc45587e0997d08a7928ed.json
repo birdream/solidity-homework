@@ -1,0 +1,522 @@
+{
+	"id": "8fa11485fabc45587e0997d08a7928ed",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.24",
+	"solcLongVersion": "0.8.24+commit.e11b9ed9",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"L3-pledge/interface/IBscPledgeOracle.sol": {
+				"content": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.8.24;\n\n\ninterface IBscPledgeOracle {\n    /**\n      * @notice 获取资产的价格\n      * @dev 用于获取特定资产价格的函数\n      * @param asset 需要获取价格的资产地址\n      * @return uint 返回资产价格的尾数（按 1e8 缩放）; 如果价格未设置或合约已暂停，则返回零\n      */\n    function getPrice(address asset) external view returns (uint256);\n\n    /**\n      * @notice 获取基础资产的价格\n      * @param cToken 需要获取价格的 cToken 标识符\n      * @return uint 返回基础资产价格的尾数\n      */\n    function getUnderlyingPrice(uint256 cToken) external view returns (uint256);\n\n    /**\n      * @notice 批量获取多个资产的价格\n      * @param assets 需要获取价格的资产数组\n      * @return uint[] 返回一个包含各资产价格的数组\n      */\n    function getPrices(uint256[] calldata assets) external view returns (uint256[]memory);\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"L3-pledge/interface/IBscPledgeOracle.sol": {
+				"IBscPledgeOracle": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "address",
+									"name": "asset",
+									"type": "address"
+								}
+							],
+							"name": "getPrice",
+							"outputs": [
+								{
+									"internalType": "uint256",
+									"name": "",
+									"type": "uint256"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						},
+						{
+							"inputs": [
+								{
+									"internalType": "uint256[]",
+									"name": "assets",
+									"type": "uint256[]"
+								}
+							],
+							"name": "getPrices",
+							"outputs": [
+								{
+									"internalType": "uint256[]",
+									"name": "",
+									"type": "uint256[]"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						},
+						{
+							"inputs": [
+								{
+									"internalType": "uint256",
+									"name": "cToken",
+									"type": "uint256"
+								}
+							],
+							"name": "getUnderlyingPrice",
+							"outputs": [
+								{
+									"internalType": "uint256",
+									"name": "",
+									"type": "uint256"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {
+							"getPrice(address)": {
+								"details": "用于获取特定资产价格的函数",
+								"params": {
+									"asset": "需要获取价格的资产地址"
+								},
+								"returns": {
+									"_0": "uint 返回资产价格的尾数（按 1e8 缩放）; 如果价格未设置或合约已暂停，则返回零"
+								}
+							},
+							"getPrices(uint256[])": {
+								"params": {
+									"assets": "需要获取价格的资产数组"
+								},
+								"returns": {
+									"_0": "uint[] 返回一个包含各资产价格的数组"
+								}
+							},
+							"getUnderlyingPrice(uint256)": {
+								"params": {
+									"cToken": "需要获取价格的 cToken 标识符"
+								},
+								"returns": {
+									"_0": "uint 返回基础资产价格的尾数"
+								}
+							}
+						},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"getPrice(address)": "41976e09",
+							"getPrices(uint256[])": "09cb3a4e",
+							"getUnderlyingPrice(uint256)": "da663257"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.24+commit.e11b9ed9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"getPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256[]\",\"name\":\"assets\",\"type\":\"uint256[]\"}],\"name\":\"getPrices\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"cToken\",\"type\":\"uint256\"}],\"name\":\"getUnderlyingPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getPrice(address)\":{\"details\":\"\\u7528\\u4e8e\\u83b7\\u53d6\\u7279\\u5b9a\\u8d44\\u4ea7\\u4ef7\\u683c\\u7684\\u51fd\\u6570\",\"params\":{\"asset\":\"\\u9700\\u8981\\u83b7\\u53d6\\u4ef7\\u683c\\u7684\\u8d44\\u4ea7\\u5730\\u5740\"},\"returns\":{\"_0\":\"uint \\u8fd4\\u56de\\u8d44\\u4ea7\\u4ef7\\u683c\\u7684\\u5c3e\\u6570\\uff08\\u6309 1e8 \\u7f29\\u653e\\uff09; \\u5982\\u679c\\u4ef7\\u683c\\u672a\\u8bbe\\u7f6e\\u6216\\u5408\\u7ea6\\u5df2\\u6682\\u505c\\uff0c\\u5219\\u8fd4\\u56de\\u96f6\"}},\"getPrices(uint256[])\":{\"params\":{\"assets\":\"\\u9700\\u8981\\u83b7\\u53d6\\u4ef7\\u683c\\u7684\\u8d44\\u4ea7\\u6570\\u7ec4\"},\"returns\":{\"_0\":\"uint[] \\u8fd4\\u56de\\u4e00\\u4e2a\\u5305\\u542b\\u5404\\u8d44\\u4ea7\\u4ef7\\u683c\\u7684\\u6570\\u7ec4\"}},\"getUnderlyingPrice(uint256)\":{\"params\":{\"cToken\":\"\\u9700\\u8981\\u83b7\\u53d6\\u4ef7\\u683c\\u7684 cToken \\u6807\\u8bc6\\u7b26\"},\"returns\":{\"_0\":\"uint \\u8fd4\\u56de\\u57fa\\u7840\\u8d44\\u4ea7\\u4ef7\\u683c\\u7684\\u5c3e\\u6570\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getPrice(address)\":{\"notice\":\"\\u83b7\\u53d6\\u8d44\\u4ea7\\u7684\\u4ef7\\u683c\"},\"getPrices(uint256[])\":{\"notice\":\"\\u6279\\u91cf\\u83b7\\u53d6\\u591a\\u4e2a\\u8d44\\u4ea7\\u7684\\u4ef7\\u683c\"},\"getUnderlyingPrice(uint256)\":{\"notice\":\"\\u83b7\\u53d6\\u57fa\\u7840\\u8d44\\u4ea7\\u7684\\u4ef7\\u683c\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"L3-pledge/interface/IBscPledgeOracle.sol\":\"IBscPledgeOracle\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"L3-pledge/interface/IBscPledgeOracle.sol\":{\"keccak256\":\"0xea0ce6f5f241bd57ba0bddfd56d22ba3a320e6429b86c515c913137d9f031ad6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://710bcbce5d6d4e8fdf7b074d6aa9f82159bfeb459d032916f9a9d48c3d487eef\",\"dweb:/ipfs/QmavuJkZ35tJ1Xvp8L7faNFvh9oE2FP12LMd4W1gvDSpj5\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {
+							"getPrice(address)": {
+								"notice": "获取资产的价格"
+							},
+							"getPrices(uint256[])": {
+								"notice": "批量获取多个资产的价格"
+							},
+							"getUnderlyingPrice(uint256)": {
+								"notice": "获取基础资产的价格"
+							}
+						},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"L3-pledge/interface/IBscPledgeOracle.sol": {
+				"ast": {
+					"absolutePath": "L3-pledge/interface/IBscPledgeOracle.sol",
+					"exportedSymbols": {
+						"IBscPledgeOracle": [
+							28
+						]
+					},
+					"id": 29,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"0.8",
+								".24"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "IBscPledgeOracle",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"fullyImplemented": false,
+							"id": 28,
+							"linearizedBaseContracts": [
+								28
+							],
+							"name": "IBscPledgeOracle",
+							"nameLocation": "69:16:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"documentation": {
+										"id": 2,
+										"nodeType": "StructuredDocumentation",
+										"src": "92:283:0",
+										"text": " @notice 获取资产的价格\n @dev 用于获取特定资产价格的函数\n @param asset 需要获取价格的资产地址\n @return uint 返回资产价格的尾数（按 1e8 缩放）; 如果价格未设置或合约已暂停，则返回零"
+									},
+									"functionSelector": "41976e09",
+									"id": 9,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "getPrice",
+									"nameLocation": "389:8:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 5,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 4,
+												"mutability": "mutable",
+												"name": "asset",
+												"nameLocation": "406:5:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 9,
+												"src": "398:13:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 3,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "398:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "397:15:0"
+									},
+									"returnParameters": {
+										"id": 8,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 7,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 9,
+												"src": "436:7:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 6,
+													"name": "uint256",
+													"nodeType": "ElementaryTypeName",
+													"src": "436:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "435:9:0"
+									},
+									"scope": 28,
+									"src": "380:65:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								},
+								{
+									"documentation": {
+										"id": 10,
+										"nodeType": "StructuredDocumentation",
+										"src": "451:172:0",
+										"text": " @notice 获取基础资产的价格\n @param cToken 需要获取价格的 cToken 标识符\n @return uint 返回基础资产价格的尾数"
+									},
+									"functionSelector": "da663257",
+									"id": 17,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "getUnderlyingPrice",
+									"nameLocation": "637:18:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 13,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 12,
+												"mutability": "mutable",
+												"name": "cToken",
+												"nameLocation": "664:6:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 17,
+												"src": "656:14:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 11,
+													"name": "uint256",
+													"nodeType": "ElementaryTypeName",
+													"src": "656:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "655:16:0"
+									},
+									"returnParameters": {
+										"id": 16,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 15,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 17,
+												"src": "695:7:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 14,
+													"name": "uint256",
+													"nodeType": "ElementaryTypeName",
+													"src": "695:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "694:9:0"
+									},
+									"scope": 28,
+									"src": "628:76:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								},
+								{
+									"documentation": {
+										"id": 18,
+										"nodeType": "StructuredDocumentation",
+										"src": "710:184:0",
+										"text": " @notice 批量获取多个资产的价格\n @param assets 需要获取价格的资产数组\n @return uint[] 返回一个包含各资产价格的数组"
+									},
+									"functionSelector": "09cb3a4e",
+									"id": 27,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "getPrices",
+									"nameLocation": "908:9:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 22,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 21,
+												"mutability": "mutable",
+												"name": "assets",
+												"nameLocation": "937:6:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 27,
+												"src": "918:25:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+													"typeString": "uint256[]"
+												},
+												"typeName": {
+													"baseType": {
+														"id": 19,
+														"name": "uint256",
+														"nodeType": "ElementaryTypeName",
+														"src": "918:7:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_uint256",
+															"typeString": "uint256"
+														}
+													},
+													"id": 20,
+													"nodeType": "ArrayTypeName",
+													"src": "918:9:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+														"typeString": "uint256[]"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "917:27:0"
+									},
+									"returnParameters": {
+										"id": 26,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 25,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 27,
+												"src": "968:15:0",
+												"stateVariable": false,
+												"storageLocation": "memory",
+												"typeDescriptions": {
+													"typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+													"typeString": "uint256[]"
+												},
+												"typeName": {
+													"baseType": {
+														"id": 23,
+														"name": "uint256",
+														"nodeType": "ElementaryTypeName",
+														"src": "968:7:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_uint256",
+															"typeString": "uint256"
+														}
+													},
+													"id": 24,
+													"nodeType": "ArrayTypeName",
+													"src": "968:9:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+														"typeString": "uint256[]"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "967:17:0"
+									},
+									"scope": 28,
+									"src": "899:86:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 29,
+							"src": "59:928:0",
+							"usedErrors": [],
+							"usedEvents": []
+						}
+					],
+					"src": "33:954:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
